@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Color Scheme</title>
+	<title>Wireframe</title>
 
 
 	<style>
@@ -15,25 +15,30 @@
 	}
 		
     .outer{
-      text-align: center;
-      
-      
-      
+      text-align: center; 
     }
-  	.page{
+  	
+    .page{
   		width:750px;
   		display: inline-block;
   		text-align:left;
   		padding:10px;
-        
-  	
   	}
+     
+    .swatcharea{
+  		width:300px;
+  		position: relative;
+        display: inline-block;
+  		text-align:left;
+  	}
+
   	.h1{
   		font-size: 14px;
   		font-weight: 400;
   		padding-top:20px;
   	}
-      .h2{
+     
+    .h2{
   		font-size: 22px;
   		font-weight: 600;
   		padding-bottom: 1.5rem;
@@ -87,7 +92,10 @@
   		background: linear-gradient(#19004c, #65049c, #ea6cef, #f9a4f5);
       
   	}
-  	
+  	.hobbypagecolor1{
+  		background: linear-gradient(#00163C, #010073, #002BFF, #5773FF);
+      
+  	}
 
   	.textcolor1{
         background-color: white;
@@ -102,6 +110,20 @@
         
   	}
 
+    .hobbytextcolor1{
+        background: linear-gradient(to top, #00163C, #010073, #002BFF, #5773FF);    
+  	}
+    
+    .img{
+  		padding:10px;
+  		width:95%;
+  		margin-top:30px;
+  	}
+
+  	.img_mobile{
+  		padding:10px;
+  		width:55%;
+  	}
 
 
 
@@ -116,24 +138,43 @@
            	<div class="h1">Brand Colors</div> 
            	<div class="swatch brandcolor3"></div>
             <div class="swatch brandcolor1"></div>
-            <div class="swatch brandcolor2"></div>
+            <div class="swatch brandcolor2"></div><br>
             
           
-           	
-           	<div class="h1">Menu</div> 
+         <div class="swatcharea">
+           	<div class="h1">Original Menu</div> 
            	<div class="swatch menucolor3"></div>
             <div class="swatch menucolor1"></div>
            	<div class="swatch menucolor2"></div>
 
-           	<div class="h1">Page</div> 
+           	<div class="h1">Original Page</div> 
            	<div class="swatch pagecolor1"></div>
            	<div class="swatch pagecolor2"></div>
 
-           	<div class="h1">Text</div> 
+           	<div class="h1">Original Text</div> 
            	<div class="swatch textcolor1"></div>
            	<div class="swatch textcolor2"></div>
            	<div class="swatch textcolor3"></div>
-    
+         </div>
+
+         <div class="swatcharea">
+            <div class="h1">Hobby Menu</div> 
+            <div class="swatch menucolor3"></div>
+            <div class="swatch menucolor1"></div>
+
+            <div class="h1">Hobby Page</div> 
+            <div class="swatch pagecolor1"></div>
+            <div class="swatch hobbypagecolor1"></div>
+
+            <div class="h1">Hobby Text</div> 
+            <div class="swatch textcolor1"></div>
+            <div class="swatch hobbytextcolor1"></div>
+      </div>
+
+
+            <div><img class="img" src="img/desktop.jpg" alt="desktop wireframe sketch"></div>
+           	<div><img class="img_mobile" src="img/mobile.jpg" alt="desktop wireframe sketch"></div>
+
 
 		</div>
 
