@@ -1,0 +1,150 @@
+
+body{
+  margin:0;  
+  padding:0;
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+}
+
+.outer{
+   text-align: center;
+}
+
+.page{
+  position: relative;
+  width:100%;
+  display: inline-block;
+  background-color: black;
+}
+
+.topofpage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: 40px;
+  background-color: #1f1f1f;
+  align-items: center;
+  color: #dcdcdc;
+  font-size: 10pt;
+  font-kerning: none;
+}
+
+.menu{
+  display: none;
+  padding-left: 1.5rem;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  background-color: #1f1f1f;
+  height: 40px;
+}
+
+#menu-overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1f1f1f;
+  align-items: left;
+  text-align: left;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #1f1f1f;
+  color: #dcdcdc;
+  font-size: 10pt;
+  font-kerning: none;
+}
+
+#menu-overlay img{
+  width: 20px;
+}
+
+.inner-menu {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.inner-menu div{
+  margin-bottom: 1.25rem;
+}
+
+#close {
+  position: absolute;
+  right: 3rem;
+  top: 1rem;
+  font-size: 15pt;
+  cursor: pointer;
+}
+
+.navbar{
+  /*margin: 5rem 0rem 0rem 1rem;*/
+  flex-grow: 1;
+  margin-right: auto;
+  text-align: left;
+}
+
+.logo{
+  margin-left: 1rem;
+  max-width: 5rem;
+}
+
+.logo-img{
+  width: 30%;
+}
+
+.button{
+  background-color: #0b59dc;
+  border-radius: 16px;
+  padding: 0.35rem 1rem 0.35rem 1rem;
+  margin-right: 1rem;
+  max-width: 70px;
+}
+
+a{
+  color:#dcdcdc;
+  font-size: 10pt;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none; 
+  color: white;
+ }
+
+.current {
+  text-decoration: none;
+  color: white;
+}
+
+.content{
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 12pt;
+  font-weight: 400;
+  color: #dcdcdc;
+}
+  
+
+@media screen and (max-width: 850px) {
+
+  .menu{
+    display: flex;
+  }
+
+  .menu img{
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .topofpage{
+    display: none;
+  }
+
+}
+	  
