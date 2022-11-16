@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+body {
+  font-family: Inconsolata;
+  font-weight: 600;
+  font-size: 10pt;
+  top: 2rem;
+  left: 0;
+}
+
+.outer{
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.container {
+  width: 96%;
+  margin: auto;
+  color:white;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0% 0%;
+  min-height: 0.125rem;
+}
+
+
+.col-1 {
+    width: 8.33%;
+    background: rgba(52,47,252,.1);
+    color: #222222;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .col-2 {
+    width: 16.66%;
+    background: rgba(52,47,252,.2);
+    color: #222222;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .col-3 {
+    width: 25%;
+    background: rgba(52,47,252,.3);
+    color: #222222;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;   
+  }
+
+  .col-4 {
+    width: 33.33%;
+    background: rgba(52,47,252,.4);
+    color: #222222;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem; 
+  }
+
+  .col-5 {
+    width: 41.67%;
+    background: rgba(52,47,252,.5);
+    color: #222222;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem; 
+  }
+
+  .col-6 {
+    width: 50%;
+    background: rgba(52,47,252,.5);
+    color: #222222;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  
+
+  .col-7 {
+    width: 58.33%;
+    background: rgba(52,47,252,.57);
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .col-8 {
+    width: 66.67%;
+    background: rgba(52,47,252,.64);
+  }
+
+  .col-9 {
+    width: 75%;
+    background: rgba(52,47,252,.75);
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .col-10 {
+    width: 83.33%;
+    background: rgba(52,47,252,.82);
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .col-11 {
+    width: 91.67%;
+    background: rgba(52,47,252,.89);
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .col-12 {
+    width: 100%;
+    background: rgba(52,47,252,1);
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+/* This is clearfix, clearing content after each row*/
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div [class^="col"] {
+    height:100px;
+    border: 1px solid white;
+   
+}
