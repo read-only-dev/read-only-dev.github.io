@@ -1,0 +1,209 @@
+
+
+body {
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* Text Styles */
+
+.h1{
+    font-size: 64pt;
+    font-weight: 400;
+    letter-spacing: -0.25rem;
+}
+
+.h2{
+    font-size: 48pt;
+    font-weight: 400;
+    letter-spacing: -0.15rem;
+    background-image: linear-gradient(#5773FF, #4B69FF 30%, #002BFF);
+    background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
+.h4{
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+.h4-gradient{
+    font-size: 20pt;
+    font-weight: 400;
+    background-image: linear-gradient(#5773FF, #4B69FF, #002BFF);
+    background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.h5{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+
+/* Component #1: Hero */
+
+/* Parent Grid */
+
+.component-grid-hero{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 15vh auto 15vh;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.img-left{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: end;
+    align-items: center;
+    background-color: #383838; /*placeholder*/
+    text-align: center; /*placeholder*/
+    padding: 250px 150px 250px 150px; /*placeholder*/
+}
+
+/* Child/Text Grid */
+
+.component-grid-hero-text{
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.h2.hero-headline{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    margin-left: -0.75rem;
+    align-self: center;
+
+}
+
+.h5.hero-body{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    max-width: 240px; 
+}
+
+/* Component #2: 3 Text Left*/
+
+/* Parent Grid */
+
+.component-3text-left{
+    display: grid;
+    grid-template-columns: 5% 55% 35% 15%;
+    grid-template-rows: 15vh auto 15vh;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 5vh;
+}
+
+.img-right{
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: start;
+    align-items: center;
+    background-color: #383838; /*placeholder*/
+    text-align: center; /*placeholder*/
+    padding: 250px 150px 250px 150px; /*placeholder*/
+}
+
+/* Child/Text Grid */
+
+.component-3text-left-text{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 20% 60% 10%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.h4.three-text-1 {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    align-self: end;
+}
+
+.h2.three-text-2 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    align-self: center;
+}
+
+.h5.three-text-3 {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    align-self: start;
+    max-width: 240px;
+}
+
+/* Component #3: Centered Copy*/
+
+.component-centered-copy{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 30vh auto auto 30vh;
+    margin: auto;
+    padding-top: 7vh;
+    padding-bottom: 7hv;
+    background-image: linear-gradient(#000000, #002BFF, #4B69FF 45%, #5773FF 50%, #4B69FF 55%, #002BFF, #000000);
+}
+
+.h1.centered-copy-headline {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    align-self: center;
+}
+
+.h5.centered-copy-body {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    padding-top: 5vh;
+    max-width: 300px;
+}
