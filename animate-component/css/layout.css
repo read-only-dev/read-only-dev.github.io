@@ -1,0 +1,97 @@
+
+
+body {
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* Text Styles */
+
+.h2{
+    font-size: 48pt;
+    font-weight: 400;
+    letter-spacing: -0.15rem;
+    background-image: linear-gradient(#5773FF, #4B69FF 30%, #002BFF);
+    background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
+.h5{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+
+/* Component #1: Hero */
+
+/* Parent Grid */
+
+.component-grid-hero{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 15vh auto 15vh;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.img-left{
+    z-index: 1;
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: end;
+    align-items: center;
+    background-color: #383838; /*placeholder*/
+    text-align: center; /*placeholder*/
+    padding: 250px 150px 250px 150px; /*placeholder*/
+}
+
+.img-left:hover{
+    transform: scale(1.15, 1.15) skew(7deg, 2deg);
+    
+    
+}
+
+/* Child/Text Grid */
+
+.component-grid-hero-text{
+    z-index: 2;
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.h2.hero-headline{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    margin-left: -0.75rem;
+    align-self: center;
+
+}
+
+.h5.hero-body{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    max-width: 240px; 
+}
+
